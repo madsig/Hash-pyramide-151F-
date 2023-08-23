@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function writeHash() {
+            document.body.innerText += '#';
+        }
+
+        function writeSpace() {
+            document.body.innerHTML += '&nbsp';
+        }
+
+        function writeLineBreak() {
+            document.body.innerText += '\n';
+        }
+        let rad = 0;
+        while(rad<4) {
+            for(i=0; i<rad; i++) {
+                writeSpace();
+            }
+
+            for(i=0; i<8-rad*2; i++) {
+                writeHash();
+            }
+            writeLineBreak();
+            rad++;
+        }
+        
+
+
+
+    </script>
+</body>
+
+</html>
